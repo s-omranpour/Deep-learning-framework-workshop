@@ -17,7 +17,7 @@ class Classifier(nn.Module):
                        nn.BatchNorm2d(out_c),
                        nn.ReLU(),
                        nn.Dropout(d)]
-        layers += [nn.Flatten(), nn.Linear(out_c*out_c*input_size, num_classes), nn.BatchNorm2d(num_classes), nn.Softmax()]
+        layers += [nn.Flatten(), nn.Linear(out_c*input_size*input_size, num_classes), nn.BatchNorm1d(num_classes), nn.Softmax()]
         self.net = nn.Sequential(*layers)
     
     def forward(self, x):
