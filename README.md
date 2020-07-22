@@ -15,4 +15,8 @@ This folder contains notebooks and scripts made for the first session of the wor
  - A simple CNN classifier with torch.nn.Module
  
  ## Session 2
- tbt
+This folder contains the notebook made for the second session of the workshop. Subjects covered:
+- Using Built-in Datasets
+- RNN-based model for classification
+- Using differenet loss functions
+- Writing custom loss function
